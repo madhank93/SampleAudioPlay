@@ -7,12 +7,24 @@
         android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_1"/>
+        android:text="@string/play"/>
 
     <Button
         android:id="@+id/pause_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_2"/>
+        android:text="@string/pause"/>
+
+    <Button
+        android:id="@+id/backward_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"/>
+
+    <Button
+        android:id="@+id/forward_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forward"/>
 
 </LinearLayout>

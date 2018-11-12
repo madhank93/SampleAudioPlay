@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Sample Audio Play</string>
-    <string name="button_1">Play</string>
-    <string name="button_2">Pause</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="back">Backward</string>
+    <string name="forward">Forward</string>
 </resources>
