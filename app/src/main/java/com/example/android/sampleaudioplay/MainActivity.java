@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
+
+                // Fires this event when the song is completed playing
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        Toast.makeText(getApplicationContext(),"Song is completed playing",Toast.LENGTH_LONG).show();
+                    }
+                });
             }
         });
 
@@ -76,14 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             });
-
-        // Fires this event when the song is completed playing
-        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                Toast.makeText(getApplicationContext(),"Song is completed playing",Toast.LENGTH_LONG).show();
-            }
-        });
 
         }
     }
