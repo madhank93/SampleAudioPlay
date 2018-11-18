@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -76,6 +77,13 @@ public class MainActivity extends AppCompatActivity {
             }
             });
 
+        // Fires this event when the song is completed playing
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Toast.makeText(getApplicationContext(),"Song is completed playing",Toast.LENGTH_LONG).show();
+            }
+        });
 
         }
     }
